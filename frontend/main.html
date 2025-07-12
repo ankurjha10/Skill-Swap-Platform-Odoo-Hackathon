@@ -13,12 +13,6 @@
   <link rel="manifest" href="assets/images/site.webmanifest" />
 </head>
 <body>
-  <div id="loader-wrapper">
-  <div class="loader-text">
-    <span id="welcome-word">Welcome</span>
-    <div class="dots"><span>.</span><span>.</span><span>.</span></div>
-  </div>
-</div>
   <header class="header">
     <div class="logo">
       <img src="assets/images/logo.png" alt="Skill Swap Logo" class="logo-img" />
@@ -29,6 +23,9 @@
         <input type="search" placeholder="Search here....." />
         <i class="fa fa-search"></i>
       </form>
+      <div class="user-greeting">
+        <span class="greeting-text" id="greeting">Hello, User</span>
+      </div>
       <button class="login-btn" onclick="location.href='login.html'">Login</button>
     </div>
   </header>
@@ -73,5 +70,16 @@
   </div>
 
   <button id="theme-toggle">🌙</button>
+
+  <!-- 🔸 Greeting script from second code -->
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      const greeting = document.getElementById("greeting");
+      const username = localStorage.getItem("username");
+      if (username) {
+        greeting.textContent = `Hello, ${username}`;
+      }
+    });
+  </script>
 </body>
 </html>

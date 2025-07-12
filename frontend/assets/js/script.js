@@ -182,3 +182,27 @@ function closePopup() {
     const popup = document.getElementById('popup');
     if (popup) popup.classList.add('hidden');
 }
+
+  const welcomeWords = [
+    "Welcome",      // English
+    "नमस्ते",        // Hindi
+    "வணக்கம்",       // Tamil
+    "नमस्कार",       // Maithili
+    "Bienvenido",   // Spanish
+    "أهلاً وسهلاً"   // Arabic
+  ];
+
+  const welcomeEl = document.getElementById("welcome-word");
+  let i = 0;
+
+  const interval = setInterval(() => {
+    i = (i + 1) % welcomeWords.length;
+    welcomeEl.textContent = welcomeWords[i];
+  }, 700); // every 700ms change word
+
+  window.addEventListener("load", () => {
+    setTimeout(() => {
+      document.getElementById("loader-wrapper").style.display = "none";
+      clearInterval(interval);
+    }, 5000); // after 5 seconds, hide loader
+  });

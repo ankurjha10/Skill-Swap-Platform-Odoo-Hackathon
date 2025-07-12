@@ -16,7 +16,7 @@
                 <input type="text" placeholder="Name" />
                 <input type="email" placeholder="Email" />
                 <input type="password" placeholder="Password" />
-                <button>Sign Up</button>
+                <button type="button" onclick="redirectToMain()">Sign Up</button>
             </form>
         </div>
         <div class="form-container sign-in-container">
@@ -26,10 +26,11 @@
 
                 
                 
-                <input type="email" placeholder="Email" />
+                <input type="email" placeholder="Email/User" />
                 <input type="password" placeholder="Password" />
                 <a href="#">Forgot your password?</a>
-                <button>Sign In</button>
+                <button type="button" onclick="redirectToMain()">Sign In</button>
+
             </form>
         </div>
         <div class="overlay-container">
@@ -72,6 +73,18 @@
                 mobileToggle.textContent = "Sign In";
             }
         });
+        function redirectToMain() {
+    location.href = "main.html";
+     
+    function handleLogin(event) {
+      event.preventDefault(); // Prevent form from submitting normally
+      const username = document.getElementById("username").value.trim();
+      if (username) {
+        localStorage.setItem("username", username);
+        window.location.href = "main.html"; // Navigate to main page
+      }
+    }
+}
     </script>
 </body>
 </html>
