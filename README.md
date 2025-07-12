@@ -4,6 +4,19 @@ A mini application built for the **Odoo Hackathon** that enables users to **list
 
 ---
 
+
+## 🔥 Team BlazeFury
+
+A passionate and diverse team of developers determined to build innovative and practical tech solutions.
+
+| 👤 Name                 | 📧 Email                          | 🧩 Role         |
+|-------------------------|------------------------------------|-----------------|
+| **Kumar Anubhav**      | anubhavjha424@gmail.com           | Team Leader     |
+| **Kritagya Yadav**      | kritagyay2005@gmail.com           | Developer       |
+| **Ankur Jha**           | jhaankur33@gmail.com              | Developer       |
+| **Prabhat Shrivastava** | prabhatshri2006@gmail.com         | Developer       |
+
+
 ## 💡 Problem Statement
 
 In today’s interconnected world, people possess a wide array of talents but often lack access to affordable or collaborative learning opportunities. Our solution aims to bridge that gap through a **Skill Swap Platform**, where **skills become currency**.
@@ -24,21 +37,5 @@ In today’s interconnected world, people possess a wide array of talents but of
 - 💬 Internal chat or request system
 - 📅 Schedule collaboration sessions
 - 👥 User profile with ratings & feedback
-
----
-
-
----
-
-## 🔥 Team BlazeFury
-
-A passionate and diverse team of developers determined to build innovative and practical tech solutions.
-
-| 👤 Name                 | 📧 Email                          | 🧩 Role         |
-|-------------------------|------------------------------------|-----------------|
-| **Kumar Anubhav**      | anubhavjha424@gmail.com           | Team Leader     |
-| **Kritagya Yadav**      | kritagyay2005@gmail.com           | Developer       |
-| **Ankur Jha**           | jhaankur33@gmail.com              | Developer       |
-| **Prabhat Shrivastava** | prabhatshri2006@gmail.com         | Developer       |
 
 ---
