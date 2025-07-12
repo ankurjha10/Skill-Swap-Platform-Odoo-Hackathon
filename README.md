@@ -13,7 +13,7 @@ A passionate and diverse team of developers determined to build innovative and p
 |-------------------------|------------------------------------|-----------------|
 | **Kumar Anubhav**      | anubhavjha424@gmail.com           | Team Leader     |
 | **Kritagya Yadav**      | kritagyay2005@gmail.com           | Developer       |
-| **Ankur Jha**           | jhaankur33@gmail.com              | Developer       |
+| **Ankur Jha**           | jhaankur33@gmail.com              | UI/UX Designer  |
 | **Prabhat Shrivastava** | prabhatshri2006@gmail.com         | Developer       |
 
 
