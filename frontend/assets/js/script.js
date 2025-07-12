@@ -1,14 +1,19 @@
 document.addEventListener('DOMContentLoaded', function () {
     const requestButtons = document.querySelectorAll('.request-btn');
-    const userCards = document.querySelectorAll('.user-card');
-    const loginBtn = document.querySelector('.login-btn');
-    const searchIcon = document.querySelector('.fa-search');
-    const avatars = document.querySelectorAll('.avatar');
-    const themeToggleBtn = document.getElementById('theme-toggle');
 
-    // === Ripple + Request Animation ===
+    // Login check
+    const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
+
     requestButtons.forEach(button => {
         button.addEventListener('click', function (e) {
+            if (!isLoggedIn) {
+                alert("⚠️ Please login to send a request.");
+                // Optional: redirect to login
+                // window.location.href = "login.html";
+                return;
+            }
+
+            // ✅ Ripple effect and animation logic
             const ripple = document.createElement('span');
             const rect = this.getBoundingClientRect();
             const size = Math.max(rect.width, rect.height);
@@ -27,7 +32,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
             this.appendChild(ripple);
 
-            // Change text temporarily
             const originalText = this.textContent;
             this.textContent = 'Requested!';
             this.style.background = 'linear-gradient(45deg, #27ae60, #2ecc71)';
