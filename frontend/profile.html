@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Profile</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="assets/js/script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="assets/images/logo.png" alt="Skill Swap Logo" class="logo-img" />
+      <span class="logo-text">Skill Swap</span>
+    </div>
+  </header>
+
+  <!-- Clean Profile Layout -->
+  <div class="container">
+    <div id="profile-container" class="profile-detail"></div>
+  </div>
+
+  <!-- Skill Request Popup -->
+  <div class="popup-overlay hidden" id="popup">
+    <div class="popup-box">
+      <h2>Send Skill Request</h2>
+      <label for="your-skill">Your Skill:</label>
+      <select id="your-skill"></select>
+
+      <label for="their-skill">Their Skill:</label>
+      <select id="their-skill"></select>
+
+      <label for="message">Message:</label>
+      <textarea id="message" rows="4" placeholder="Write something..."></textarea>
+
+      <button id="submit-request">Submit</button>
+      <button onclick="closePopup()">Cancel</button>
+    </div>
+  </div>
+
+  <button id="theme-toggle">🌙</button>
+</body>
+</html>
