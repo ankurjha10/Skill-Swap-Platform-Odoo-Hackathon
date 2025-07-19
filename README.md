@@ -36,6 +36,6 @@ In today’s interconnected world, people possess a wide array of talents but of
 - 🔍 Matchmaking based on skills needed and skills offered
 - 💬 Internal chat or request system
 - 📅 Schedule collaboration sessions
-- 👥 User profile with ratings & feedback
+- 👥 User profile with ratings and feedback
 
 ---
